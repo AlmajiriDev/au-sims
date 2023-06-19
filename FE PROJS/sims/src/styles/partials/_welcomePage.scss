@@ -1,0 +1,141 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
+    height: 70vh;
+    background-color: lightblue;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    .content {
+    // padding-block: 10em;
+      display: flex;
+      align-items: center;
+      max-width: max-content;
+    }
+    
+    p{
+        margin-block: .7em;
+        color: #007bff; 
+        font-weight: 600; 
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+    
+    }
+    
+    .image {
+      flex: 1;
+      text-align: right;
+      transform: scaleY(1.5);
+    }
+    
+    .image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    &{
+
+        .apply-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          .apply-button:hover {
+            background-color: #0056b3;
+          }
+    }
+  }
+
+
+@media screen and (max-width: 1046px){
+    h2{
+        font-size: 1.3em;
+        line-height: 30px;
+    }
+
+    p{
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .container-home{
+            // align-items: center;
+            max-width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h2{
+                text-align: center;
+                top: 0;
+            }
+            p{
+                font-size: .9em;
+            }
+        .content{
+            flex-direction: column;
+        }
+        .image{
+            display: none;
+        }
+
+    }
+
+    .container-home .apply-button{
+        position: relative;
+        left: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+      h2{
+          text-align: center;
+          top: 0;
+          line-height: 20px;
+          font-size: 1em;
+          padding-bottom: 20px;
+      }
+    .container-home{
+            // align-items: center;
+            max-width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p{
+              font-size: .8em;
+            }
+        .content{
+            flex-direction: column;
+        }
+        .image{
+            display: none;
+        }
+
+    }
+    button{
+      margin-top: 20px;
+    }
+
+    .container-home .apply-button{
+      
+      position: relative;
+        font-size: .7em;
+        left: 20%;
+    }
+    
+}
+
+  

@@ -1,0 +1,119 @@
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding-top: 40px;
+    .welcome-texts{
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.hello{
+    margin-top: 2em;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: aqua;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.text2{
+    margin-top: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.hero-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email-error{
+    margin-bottom: .5em;
+    color: red;
+}
+
+.email-input {
+    border: none;
+    border-bottom: 2px solid var(--primmary-color);
+    outline: none;
+    padding: 10px 0;
+    transition: 0.25s;
+    margin-block: 10px;
+    outline: none;
+    background-color: transparent;
+    &::placeholder{
+        text-align: center;
+    }
+  }
+
+  button.hero-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: .5em 2em .5em 2em;
+    color: white;
+    background: #64b3a3;
+    background: linear-gradient(to right, #006466, #064420);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    span {
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    &:hover{
+        cursor: pointer;
+        svg{
+            transform: translateX(5px) rotate(90deg);
+        }
+    }
+    svg {
+        margin-right: 3px;
+        transform: rotate(30deg);
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+  }
+  
+  
+  
+  @media screen and (max-width: 768px){
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 90px;
+        .welcome-texts{
+            padding-bottom: 20px;
+            .hello{
+                margin-top: 2.5em;
+                font-size: 1.5em;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    h2{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5em;
+        line-height: 40px;
+        color: var(--primmary-color);
+    }
+    
+}

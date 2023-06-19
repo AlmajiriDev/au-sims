@@ -1,0 +1,85 @@
+:root{
+    --background-color: #fff;
+    --background-light:#fff;
+    --shadow-color: rgba(0,0,0,0.2);
+    --primmary-color: #055c13;
+    --text-color: #0A0A0A;
+    --text-light: #575757;
+    --font-size: 16px;
+    --animation-speed: 1;
+}
+
+@function getAnimationDuration ($duration: number){
+    @return calc($duration * var(--animation-speed));
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 55px;
+    // background-color: springgreen;
+    background-image: url('../public/17973908.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    line-height: 50px;
+    color: var(--primmary-color);
+}
+
+
+@import './styles/partials/navbar';
+@import './styles/partials/sidebar';
+@import './styles/partials/heroSection';
+@import "./styles/partials/animation";
+@import "./styles/partials/button.scss";
+@import "./styles/partials/form.scss";
+@import "./styles/partials/emailCard";
+@import "./styles/partials/login";
+@import "./styles/partials/welcomePage";
+@import "./styles/partials/staffType";
+@import "./styles/partials/resendEmal";
+
+
+.main{
+    padding-block: 1vw;
+}
+
+.container {
+    padding-inline: 12vw;   
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        .nav-links{
+            display: none;
+        }
+        .sidebar-btn{ 
+            display: block;
+        }
+    }
+
+}

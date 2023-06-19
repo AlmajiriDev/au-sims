@@ -1,0 +1,97 @@
+
+.navbar{
+    height: 55px; 
+    box-shadow: 0 3px 6px var(--shadow-color);
+    background-color:var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 998;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .nav-links{
+        a{
+            margin-left: 1em;
+            color: var(--text-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative; 
+            font-size: .9em;         
+            
+            &::before{
+                content: '';
+                display: inline-block;
+                height: 3px;
+                width: 100%;
+                background-color: var(--primmary-color);
+                position: absolute;
+                bottom: -5px;
+                left: 0;    
+                transform: scaleX(0);
+                transition: transform getAnimationDuration(.2s) ease-in-out;
+            }
+            &:hover{
+                &::before{
+                    transform: scaleX(1);
+                } 
+            }
+            &.active{
+                color: var(--primmary-color);
+                font-weight: bolder;
+            }
+        }
+    }
+    .logo{
+        img{
+            width: 60px;
+            height: 50px;
+        }
+    }
+}
+
+.sidebar-btn{
+    height: 28px;
+    width: 35px; 
+    position: relative;
+    display: none;
+    .bar{
+        border-radius: 5px;
+        position: absolute;
+        height: 7px;
+        width: 100%;
+        background-color: var(--primmary-color);
+        transition: getAnimationDuration(.2s);
+        &:nth-child(1){
+            top: 0;
+        }            
+        &:nth-child(2){
+            top: 50%;
+            transform-origin: right;
+            transform: scaleX(.8) translateY(-50%);
+        }
+        &:nth-child(3){
+            top: 100%;
+            transform-origin: right;
+            transform: scaleX(1.1) translateY(-100%);
+        }
+
+    }
+    &.active{
+        .bar{
+            transform-origin: center;
+            top: 50%;
+            &:nth-child(1){
+                transform: translate(0, -59%) scale(1) rotate(-45deg);
+            }
+            &:nth-child(2){
+                transform: scale(0);
+            }                
+            &:nth-child(3){
+                transform: translate(0, -59%) scale(1) rotate(45deg);
+            }
+        }
+    }
+}
+

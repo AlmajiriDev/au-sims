@@ -1,0 +1,33 @@
+// button {
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     justify-content: center;
+//     font-family: inherit;
+//     font-weight: 500;
+//     font-size: 17px;
+//     padding: .5em 2em .5em 2em;
+//     color: white;
+//     background: #64b3a3;
+//     background: linear-gradient(to right, #006466, #064420);
+//     border: none;
+//     letter-spacing: 0.05em;
+//     border-radius: 16px;
+//   }
+  
+//   button:hover{
+//     cursor: pointer;
+//   }
+//   button svg {
+//     margin-right: 3px;
+//     transform: rotate(30deg);
+//     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+//   }
+  
+//   button span {
+//     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+//   }
+  
+//   button:hover svg {
+//     transform: translateX(5px) rotate(90deg);
+//   }
