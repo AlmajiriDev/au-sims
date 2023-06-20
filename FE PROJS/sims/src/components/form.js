@@ -73,6 +73,16 @@ function Form() {
             onChange={handleAppointmentDateChange}
           />
         </label>
+        <label>
+          Passport Image:
+          <input
+            required
+            type="file"
+            accept="image/*"
+            className="input"
+          />
+        </label>
+
 
         <button className="reg-submit form-submit" type="submit">
           Submit
