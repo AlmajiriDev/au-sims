@@ -35,7 +35,7 @@ function Navbar() {
     <>
     <div className='navbar container'>
         <div className='logo'>
-            <img src='./achievers-logo.png' alt=''></img>
+            <img src='../public/achievers-logo.png' alt=''></img>
         </div>
         <div className='nav-links'>
         {

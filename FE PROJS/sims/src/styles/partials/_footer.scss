@@ -1,0 +1,27 @@
+
+.footer {
+    background-color: transparent;
+    // padding: 5px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+    // display: block;
+    position: absolute;
+    
+  }
+  
+  .footer-content {
+    display: flex;
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+  }
+  
+  .footer-content span {
+    margin: 3px;
+  }
+  
+ 

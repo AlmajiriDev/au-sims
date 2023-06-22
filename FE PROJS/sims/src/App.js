@@ -12,9 +12,11 @@ import EmailVerified from "./pages/EmailVerified";
 import StaffType from "./components/StaffType";
 import Register from "./pages/Register";
 import ResendEmail from "./pages/ResendEmail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
+    <>
     <Router>
     <Navbar  />
     <div className="container main">
@@ -29,7 +31,9 @@ function App() {
         <Route path="/resendEmail" element={<ResendEmail/>}/> 
       </Routes>
     </div>
-  </Router>
+   </Router>
+    <Footer/>
+    </>
   )
 }
 
